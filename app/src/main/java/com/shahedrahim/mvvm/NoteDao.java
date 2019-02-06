@@ -9,6 +9,10 @@ import android.arch.persistence.room.Update;
 
 import java.util.List;
 
+/**
+ * This is the DAO interface for Note
+ * It provides the CRUD abstraction for the Room
+ */
 @Dao
 public interface NoteDao {
 
