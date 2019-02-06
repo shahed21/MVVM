@@ -8,11 +8,17 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 
+/**
+ * This class defines the Database for this app
+ * It includes {@link NoteDao}
+ */
 @Database(entities = {Note.class}, version=1, exportSchema = false)
 public abstract class NoteDatabase extends RoomDatabase {
 
+    //Static instance of the Database
     private static NoteDatabase instance;
 
+    // Handler for the Note Room
     public abstract NoteDao noteDao();
 
     public static synchronized NoteDatabase getInstance(Context context) {
@@ -20,8 +26,8 @@ public abstract class NoteDatabase extends RoomDatabase {
             instance = Room.databaseBuilder(context.getApplicationContext(),
                     NoteDatabase.class,
                     "note_database")
-                    .fallbackToDestructiveMigration()
-                    .addCallback(roomCallback)
+                    .fallbackToDestructiveMigration() //Destroys the old DB
+                    .addCallback(roomCallback)  //Creates tables in the new DB
                     .build();
         }
         return instance;
