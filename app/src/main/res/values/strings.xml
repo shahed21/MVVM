@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MVVM</string>
+    <string name="add_note_title">Add Note</string>
+    <string name="add_note_empty_title_description">Please insert a title and description.</string>
+
+    <string name="main_activity_note_saved">Note saved.</string>
+    <string name="main_activity_note_not_saved">Note not saved.</string>
 </resources>
