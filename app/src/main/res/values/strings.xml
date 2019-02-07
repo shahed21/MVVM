@@ -1,10 +1,18 @@
 <resources>
     <string name="app_name">MVVM</string>
+
     <string name="add_note_title">Add Note</string>
+    <string name="edit_note_title">Edit Note</string>
     <string name="add_note_empty_title_description">Please insert a title and description.</string>
+
+    <string name="layout_add_note_edit_view_title_text">Title</string>
+    <string name="layout_add_note_edit_view_description_text">Description</string>
+    <string name="layout_add_note_text_view_priority_text">Priority</string>
 
     <string name="main_activity_note_saved">Note saved.</string>
     <string name="main_activity_note_not_saved">Note not saved.</string>
     <string name="main_activity_note_deleted">Note deleted.</string>
     <string name="main_activity_all_note_deleted">All notes deleted.</string>
+    <string name="main_activity_note_updated">Note updated.</string>
+    <string name="main_activity_note_not_updated">Note can not be updated.</string>
 </resources>
