@@ -27,8 +27,8 @@ public class NoteAdapter extends ListAdapter<Note, NoteAdapter.NoteHolder> {
 
         @Override
         public boolean areContentsTheSame(@NonNull Note oldNote, @NonNull Note newNote) {
-            return (oldNote.getDescription().equals(newNote.getDescription()) ||
-                    oldNote.getTitle().equals(newNote.getTitle()) ||
+            return (oldNote.getDescription().equals(newNote.getDescription()) &&
+                    oldNote.getTitle().equals(newNote.getTitle()) &&
                     (oldNote.getPriority() == newNote.getPriority()));
         }
     };
